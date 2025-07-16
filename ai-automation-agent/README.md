@@ -2,9 +2,9 @@
 
 An intelligent automation agent built with Python, OpenAI, and n8n to create automated workflows.
 
-## 🚀 Project Status
+## Project Status
 
-### ✅ Completed
+### Completed
 - [x] **Professional project structure** with organized folders (`src/`, `tests/`, etc.)
 - [x] **Virtual environment configured** with development and production dependencies
 - [x] **Tests working** (3 tests passing successfully)
@@ -14,11 +14,11 @@ An intelligent automation agent built with Python, OpenAI, and n8n to create aut
 - [x] **GitLens configured** for history visualization
 - [x] **Development tools configured** (Black, isort, pylint, pytest)
 
-### 🔄 In Progress
+### In Progress
 - [ ] **Complete GitHub synchronization** (resolve submodule issue)
 - [ ] **Project documentation** (this README)
 
-### 📋 Next Steps
+### Next Steps
 - [ ] **Define first automation objective**
 - [ ] **Create agent endpoint/script**
 - [ ] **Install and configure n8n**
@@ -27,7 +27,7 @@ An intelligent automation agent built with Python, OpenAI, and n8n to create aut
 
 ---
 
-## 🗺️ Project Roadmap
+## Project Roadmap
 
 ### **Phase 1: Base Configuration** ✅
 - [x] Configure Python project structure
@@ -67,7 +67,7 @@ An intelligent automation agent built with Python, OpenAI, and n8n to create aut
 
 ---
 
-## 🛠️ Quick Setup
+## Quick Setup
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -108,7 +108,7 @@ An intelligent automation agent built with Python, OpenAI, and n8n to create aut
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 ai-automation-agent/
@@ -133,7 +133,7 @@ ai-automation-agent/
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -148,7 +148,7 @@ PYTHONPATH=src pytest tests/test_basic.py -v
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Useful Commands
 
@@ -165,7 +165,7 @@ Use `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) and search for:
 
 ---
 
-## 🔧 Cursor Configuration
+## Cursor Configuration
 
 This project is configured to work perfectly with Cursor:
 
@@ -181,7 +181,7 @@ Extensions will be automatically installed when you open the project in Cursor.
 
 ---
 
-## 📊 Project Metrics
+## Project Metrics
 
 - **Lines of code**: ~200+
 - **Tests**: 3 basic tests passing
@@ -190,7 +190,7 @@ Extensions will be automatically installed when you open the project in Cursor.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the project
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -200,13 +200,13 @@ Extensions will be automatically installed when you open the project in Cursor.
 
 ---
 
-## 📄 License
+## License
 
 This project is under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🆘 Support
+## Support
 
 If you have problems or questions:
 1. Check the documentation
@@ -215,7 +215,7 @@ If you have problems or questions:
 
 ---
 
-## 📝 Development Notes
+## Development Notes
 
 ### Last Update
 - **Date**: January 2025
