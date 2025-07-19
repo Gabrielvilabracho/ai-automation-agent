@@ -33,6 +33,20 @@ extend-exclude = '''
 )/
 '''
 
+[tool.pylint.messages_control]
+disable = [
+    "C0114",  # missing-module-docstring
+    "C0115",  # missing-class-docstring
+    "C0116",  # missing-function-docstring
+    "C0413",  # wrong-import-position (para tests)
+    "C0415",  # import-outside-toplevel (para tests)
+    "W0611",  # unused-import (para tests)
+    "W0718",  # broad-exception-caught
+]
+
+[tool.pylint.format]
+max-line-length = 88
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
