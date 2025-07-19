@@ -101,10 +101,87 @@ An intelligent automation agent built with Python, OpenAI, and n8n to create aut
    # Edit .env with your OpenAI credentials
    ```
 
-5. **Run tests**
+5. **Run diagnostic script**
+   ```bash
+   python check_setup.py
+   ```
+
+6. **Run tests**
    ```bash
    PYTHONPATH=src pytest tests/ -v
    ```
+
+---
+
+## Troubleshooting
+
+### Diagnostic Script
+
+Si tienes problemas, ejecuta el script de diagnóstico:
+
+```bash
+python check_setup.py
+```
+
+Este script verificará:
+- ✅ Versión de Python
+- ✅ Dependencias instaladas
+- ✅ Configuración del archivo .env
+- ✅ Estructura del proyecto
+
+### Problemas Comunes
+
+#### 1. Error de API Key
+```
+Error de configuración: OPENAI_API_KEY no está configurada
+```
+
+**Solución:**
+1. Copia el archivo de ejemplo: `cp env.example .env`
+2. Edita `.env` y agrega tu API key de OpenAI
+3. Obtén tu API key en: https://platform.openai.com/api-keys
+
+#### 2. Dependencias faltantes
+```
+ModuleNotFoundError: No module named 'openai'
+```
+
+**Solución:**
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Error de importación en tests
+```
+ImportError: cannot import name 'run_agent'
+```
+
+**Solución:**
+```bash
+PYTHONPATH=src pytest tests/ -v
+```
+
+#### 4. Problemas de permisos
+```
+PermissionError: [Errno 13] Permission denied
+```
+
+**Solución:**
+```bash
+chmod +x check_setup.py
+```
+
+### Logs y Debugging
+
+Para obtener más información sobre errores:
+
+```bash
+# Ejecutar con debug
+DEBUG=True python main.py
+
+# Ver logs detallados
+python -v main.py
+```
 
 ---
 
@@ -124,6 +201,7 @@ ai-automation-agent/
 │   └── test_basic.py      # Basic tests
 ├── .vscode/               # VS Code configuration
 ├── main.py               # Entry point
+├── check_setup.py        # Diagnostic script
 ├── requirements.txt      # Production dependencies
 ├── requirements-dev.txt  # Development dependencies
 ├── pyproject.toml       # Tool configuration
@@ -153,6 +231,7 @@ PYTHONPATH=src pytest tests/test_basic.py -v
 ### Useful Commands
 
 - **Run application**: `python main.py`
+- **Run diagnostic**: `python check_setup.py`
 - **Format code**: `black src/ tests/ main.py`
 - **Sort imports**: `isort src/ tests/ main.py`
 - **Lint code**: `pylint src/ tests/ main.py`
@@ -209,9 +288,10 @@ This project is under the MIT License - see the [LICENSE](LICENSE) file for deta
 ## Support
 
 If you have problems or questions:
-1. Check the documentation
-2. Search existing issues
-3. Create a new issue with problem details
+1. Run `python check_setup.py` for diagnostics
+2. Check the troubleshooting section above
+3. Search existing issues
+4. Create a new issue with problem details
 
 ---
 
